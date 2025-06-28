@@ -1,0 +1,30 @@
+/* 1. Make the parent container a flex box */
+main {
+  display: flex;
+  min-height: 100vh;       /* full-height if you like */
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Style both asides */
+aside.left,
+aside.right {
+  flex: 0 0 200px;         /* fixed 200px width */
+  background: #000fc3;
+  color: white;
+  padding: 1rem;
+}
+
+/* 3. Style the center panel */
+.main {
+  flex: 1;                 /* fill remaining space */
+  background: #000fc3;
+  color: white;
+  padding: 1rem;
+}
+
+/* 4. Optional — keep things from touching the viewport edge */
+body {
+  margin: 0;
+  padding: 0;
+}
